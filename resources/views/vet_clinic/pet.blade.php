@@ -16,7 +16,7 @@
 
         <li>
         {{$pet->name}}
-
+        <img src="{{$pet->photo}}" alt="1">
         </li>
         @endforeach
     

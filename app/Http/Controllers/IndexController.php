@@ -8,11 +8,11 @@ use App\Models\Animal;
 
 class IndexController extends Controller
 {
-    // public function index()
-    // {
-    //     $owner = Owner::where('', '')->get();
-
-    // }
+    public function index()
+    {
+        $owners = Owner::get();
+        return view('vet_clinic.owner', compact(['owners']));
+    }
 
     public function show($id)
     {
