@@ -7,17 +7,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>{{$owner->name}}</h1>
+    <h1>{{$owner->first_name}} {{$owner->surname}}</h1>
     
     <h2>Pets</h2>
 
     <ul>
-        @foreach ($pet) 
-        
+        @foreach ($pets as $pet) 
+
         <li>
         {{$pet->name}}
 
         </li>
+        @endforeach
     
     </ul>
 

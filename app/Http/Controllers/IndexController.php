@@ -17,8 +17,8 @@ class IndexController extends Controller
     public function show($id)
     {
         $owner = Owner::find($id);
-        $pet = Animal::where('owner_id', $id)->get();
-        return view('vet_clinic.pet', compact(['pet', 'owner']));
+        $pets = Animal::where('owner_id', $id)->get();
+        return view('vet_clinic.pet', compact(['pets', 'owner']));
     }
 }
 
