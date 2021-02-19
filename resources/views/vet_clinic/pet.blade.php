@@ -15,8 +15,13 @@
         @foreach ($pets as $pet) 
 
         <li>
-        {{$pet->name}}
-
+        {{$pet->name}}<br><br>
+        {{$pet->species}}<br><br>
+        {{$pet->breed}}<br><br>
+        {{$pet->age}}<br><br>
+        {{$pet->weight}}<br>
+       <!-- <img src="{{'http://www.veterinary-clinic.test/'.$pet->photo}}" alt=""> -->
+         <img src="{{asset($pet->photo)}}" alt="">
         </li>
         @endforeach
     
