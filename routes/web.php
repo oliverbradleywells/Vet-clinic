@@ -18,3 +18,4 @@ Route::get('/', function () {
 });
 
 Route::get('/pets/{id}', 'IndexController@show');
+Route::get('/owners', 'IndexController@index');
