@@ -10,7 +10,7 @@ class IndexController extends Controller
 {
     public function index()
     {
-        $owners = Owner::get();
+        $owners = Owner::orderBy('first_name', 'asc')->get();
         return view('vet_clinic.owner', compact(['owners']));
     }
 
