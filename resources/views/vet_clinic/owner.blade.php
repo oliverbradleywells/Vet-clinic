@@ -12,7 +12,7 @@
     <ul>
         @foreach ($owners as $owner)
 
-            <li><a href="{{action('IndexController@show', $owner->id)}}">{{$owner->first_name}}</a></li> {{--always prepares the correct url in connection to controller--}}
+            <li><a href="{{action('IndexController@show', $owner->id)}}">{{$owner->first_name}} {{$owner->surname}}</a></li> {{--always prepares the correct url in connection to controller--}}
         @endforeach
     </ul>
     
